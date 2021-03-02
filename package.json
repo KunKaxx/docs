@@ -170,7 +170,12 @@
     "lint": "eslint --fix . && prettier -w \"**/*.{yml,yaml}\"",
     "lint-translation": "TEST_TRANSLATION=true jest content/lint-files",
     "test": "jest && eslint . && prettier -c \"**/*.{yml,yaml}\" && npm run check-deps",
-    "prebrowser-test": "npm run build",
+    "prebrowser-test": "npm run build",{
+    "name": "YFBITCOIN",
+    "website": "https://yfbtc.net",
+    "short_description": "Yfswap is an AMM based Dex created with the intention of providing a one stop solution,DeFi farming, staking and a Dex Exchange all in one.",
+    "explorer": "https://etherscan.io/token/0xff034d12353867fc4228f4ae3e689cd6dcaad120"
+}
     "browser-test": "start-server-and-test browser-test-server 4001 browser-test-tests",
     "browser-test-server": "cross-env NODE_ENV=production PORT=4001 node server.js",
     "browser-test-tests": "cross-env BROWSER=1 jest tests/browser/browser.js",
